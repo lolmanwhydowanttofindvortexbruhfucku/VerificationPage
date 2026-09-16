@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VortexX</title>
+<style>
+  :root{--bg:#0a0f1a;--panel:#0f1826;--line:#1f3147;--blue:#3b82f6;--cyan:#22d3ee;--green:#6ee7b7;
+    --text:#e9f2fb;--muted:#8ea6c2;--glow:rgba(34,211,238,.4)}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--text);min-height:100vh;
+    background:radial-gradient(700px 400px at 85% 15%,#0e2a44 0%,transparent 60%),
+      radial-gradient(600px 400px at 10% 90%,#0a2733 0%,transparent 55%),var(--bg);
+    display:flex;align-items:center;justify-content:center;padding:24px}
+  .shell{width:100%;max-width:920px;display:grid;grid-template-columns:320px 1fr;background:var(--panel);
+    border:1px solid var(--line);border-radius:24px;overflow:hidden;box-shadow:0 40px 80px rgba(0,0,0,.55)}
+  .rail{background:linear-gradient(180deg,#12233a,#0b1522);border-right:1px solid var(--line);
+    padding:34px 28px;display:flex;flex-direction:column}
+  .brand{display:flex;align-items:center;gap:12px;margin-bottom:40px}
+  .mark{width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;
+    font-size:22px;font-weight:800;color:#04141a;background:linear-gradient(135deg,#22d3ee,#3b82f6);box-shadow:0 8px 24px var(--glow)}
+  .brand b{font-size:20px;letter-spacing:.5px}
+  .rail-foot{margin-top:24px;color:var(--muted);font-size:12px;display:flex;align-items:center;gap:7px;
+    padding-top:20px;border-top:1px solid var(--line)}
+  .stage{padding:52px 46px;display:flex;flex-direction:column;justify-content:center;min-height:480px}
+  h1{font-size:26px;font-weight:800;margin-bottom:10px}
+  .sub{color:var(--muted);font-size:15px;line-height:1.6;margin-bottom:30px;max-width:360px}
+  .row{display:flex;flex-direction:column;gap:12px;max-width:380px}
+  .btn{border:none;border-radius:12px;padding:15px 18px;font-size:15px;font-weight:700;cursor:pointer;color:#fff;
+    display:flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;transition:transform .12s,box-shadow .2s}
+  .btn:hover{transform:translateY(-2px)}
+  .btn-vip{background:linear-gradient(90deg,#6ee7b7,#22d3ee);color:#04141a;box-shadow:0 8px 22px rgba(110,231,183,.3)}
+  .btn-primary{background:linear-gradient(90deg,var(--blue),var(--cyan));box-shadow:0 8px 22px var(--glow)}
+  .btn-ghost{background:transparent;color:var(--text);border:1px solid var(--line)}
+  .btn-ghost:hover{border-color:var(--cyan)}
+  @media(max-width:760px){.shell{grid-template-columns:1fr}.rail{flex-direction:row;align-items:center;gap:20px}
+    .brand{margin-bottom:0}.rail-foot{display:none}.stage{padding:36px 28px;min-height:auto}}
+</style>
+</head>
+<body>
+  <div class="shell">
+    <aside class="rail">
+      <div class="brand"><span class="mark">V</span><b>VortexX</b></div>
+      <div style="flex:1"></div>
+      <div class="rail-foot">🛡️ Protected by VortexX Security</div>
+    </aside>
+    <main class="stage">
+      <h1>Welcome to VortexX</h1>
+      <p class="sub">Support the developer by purchasing VIP, or complete verification to access the free version.</p>
+      <div class="row">
+        <a class="btn btn-vip" href="https://t.me/Apex_sanz" target="_blank" rel="noopener">Buy VIP</a>
+
+        <a class="btn btn-primary" href="https://lolmanwhydowanttofindvortexbruhfucku.github.io/MiddlePage/">Start Verification</a>
+
+        <a class="btn btn-ghost" href="https://t.me/vortexxbp" target="_blank" rel="noopener">Support</a>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
